@@ -1,1 +1,1 @@
-# DnD-Class-Quiz
+# C++ Do It Yourself Course
