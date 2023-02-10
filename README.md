@@ -5,3 +5,6 @@ Hello, everyone, and welcome to my Senior Project Repository! In this repository
 # Milestone 1 Progress
 
 At this point in the project, I have written a vague Pseudocode of my plans for the final project, as well as written a beginning set of code. I have also finished Chapters 1 and 2, and have finished all exercises and example codes associated with it.
+
+-Video link
+https://mediaspace.wisconsin.edu/media/1_2avwanlc
