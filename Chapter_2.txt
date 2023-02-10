@@ -1,0 +1,131 @@
+Truth, Branching, and the Game Loop: Guess the Number
+
+Chapter Goals
+	• Understand 'truth' (as C++ defines it)
+	• Use 'if' statements to branch to sections of code
+	• Use 'switch' statements to select a section of code to execute
+	• Use 'while' and 'do' loops to repeat sections of code
+	• Generate random numbers
+
+
+Understanding Truth
+	• Truth is black and white for C++
+	• Have corresponding keywords, 'true' and 'false'
+		○ Any expression can be interpreted as 'true' or 'false'
+			§ Non-zero values are 'true'
+			§ Zero is 'false'
+
+Operator	Meaning
+==	Equal to
+!=	Not equal to
+'>'	Greater than
+'<'	Less than
+'>='	Greater than or equal to
+'<='	Less than or equal to
+
+
+Using the 'if' Statement
+	• Used to test an expression for truth and execute code based on result
+		○ 'if (expression)
+			§ 'statement';
+		○ If 'expression' is true, then 'statement' is executed
+
+
+Introducing the Score Rater Program
+	• See Score Rater code
+	
+
+Using the 'else' Clause
+	• Add an 'else' clause to an 'if' statement to provide code to be executed if statement ends up being false
+
+
+Introducing the Score Rater Program 2.0
+	• See Score Rater 2.0 code
+
+
+Using a Sequence of 'if' Statements with 'else' Clauses
+	• Can chain 'if' and 'else' together into a sequence of expressions tested in order
+'if' ()
+
+'else if' ()
+
+…
+
+'else if' ()
+
+'else' 
+
+
+Introducing the Score Rater 3.0 Program
+	• See Score Rater 3.0 code
+
+
+Using the 'switch' Statement
+	• Creates multiple branching points in your code
+
+'switch (choice)'
+{
+	'case value1:'
+		'statement;'
+		'break;'
+	'case value2:'
+		'statement;'
+		'break;'
+	'case value3:'
+		'statement;'
+		'break;'
+	…
+	'default:'
+		'statement;'
+}
+
+
+Introducing the Menu Chooser Program
+	• See Menu Chooser code
+
+
+Using 'while' Loops
+	• Let you repeat sections of code as long as an expression is 'true'
+
+'while (expression)
+	'statement;'
+
+
+Introducing the Play Again Program
+	• See Play Again code
+
+
+Using 'do' Loops
+	• Similar to 'while' loops
+	• Difference is 'do' loop tests expression after each loop, not before.
+
+'do'
+	'statement;'
+'while (expression);'
+
+
+Introducing the Play Again 2.0 Program
+	• See Play Again 2.0 code
+
+
+Using 'break' and 'continue' Statements
+	• Possible to alter behavior of loops
+	• Can immediately exit a loop with the 'break' statement
+	• Jump back to the top of the loop with 'continue' statement
+
+
+Using Logical Operators
+
+Operator	Description
+!	Logical NOT
+&&	Logical AND
+||	Logical OR
+
+	• Logical operators follow a hierarchy
+		○ Logical NOT is most important
+		○ Logical AND is second
+		○ Logical OR is least important
+
+
+Generating Random Numbers
+	• See Die Roller code
