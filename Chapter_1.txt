@@ -1,0 +1,340 @@
+                                                      --- Types, Variables, and Standard I/O: Lost Fortune ---
+
+Chapter Goals :
+	• Display output in a console window
+	• Perform arithmetic computations
+	• Use variables to store, manipulate, and retrieve data
+	• Get user input
+	• Work with constants and enumerations
+	• Work with strings
+
+
+Introducing C++
+	• Most popular language for writing big-budget computer games
+		○ Fast
+		○ Flexible
+		○ Well-supported
+
+
+Dealing with Errors
+	• Compile errors
+		○ Occur during code compilation
+			§ Object file not produced
+		○ Can be 'syntax' errors
+			§ Compiler does not understand something
+		○ Can be as simple as a typo
+	• Link errors
+		○ Occur during linking process
+			§ Indicate something the program references externally cannot be found
+		○ Solved by adjusting offending reference
+	• Run-time errors
+		○ Occur when executable is run
+		○ Program can crash abruptly
+		○ Logical error - subtle form or run-time error
+			§ Make program behave in unintended ways
+				□ Character walking on air when they shouldn't
+
+
+Understanding the ISO Standard
+	• ISO => International Organization for Standardization
+	• ISO Standard for C++ => describes how the language should work
+	• Standard library
+		○ Group of files containing building blocks for common programming tasks
+			§ Getting input
+			§ Displaying output
+
+
+Writing Your First C++ Errors
+	• GAME OVER code in file
+
+
+Commenting Code
+	• Comments are ignored by compiler
+	• Help other programmers understand intention of code
+		○ Also help the author
+		○ USE THEM
+	• Use two forward slashes '//'
+		○ Can do block comments with '/*' and '*/'
+
+
+Using Whitespace
+	• Spaces, tabs, and new lines
+		○ All ignored by compiler
+	• Helps make programs clearer
+		○ USE THEM
+
+
+Including Other Files
+	• Uses the '#' symbol
+		○ Preprocessor directive
+	• Preprocessor runs before compiler
+		○ Substitutes text based on various directives
+		○ '#include' directive
+			§ Tells preprocessor to include the contents of the following file
+	• Header file
+		○ File you include in your program using preprocessor directive
+
+
+Defining the 'main()' Function
+	• 'main' is a function
+		○ Group of programming code that can do some work and return a value
+		○ All function headers have a pair of parentheses after name '()'
+	• 'main' is where the "action" takes place in C++
+		○ Function begins after '{', and ends at '}'
+
+
+Displaying Text through the Standard Output
+	• "GAME OVER!" is a String
+		○ Series of printable characters
+			§ String literal => literally the characters between the quotes
+	• 'cout' is an object
+		○ Defined in <iostream>
+			§ Sends data to the standard output stream
+			§ Most programs, this means separate window
+	• Output operator '<<'
+		○ Sends string to 'cout' in example
+		○ Think of it as a funnel
+			§ Takes whatever is on the open side, and sends it to pointy side
+	• 'std' is a namespace
+		○ Think an area code of a phone number
+			§ Identifies the group to which something belongs
+		○ Prefix a namespace with the scope resolution operator '::'
+
+
+Terminating Statements
+	• Indicated with a semicolon ';'
+		○ End of statement
+			§ Basic unit controlling the execution of flow
+			§ All statement end with semicolon
+
+
+Returning a Value from 'main()'
+	• In example, we return 0
+	• Indicates that the program ends without a problem
+
+
+Working with the STD Namespace
+	• Common to use elements for 'std' namespace'
+	• Two different methods for directly accessing elements
+		○ Save effort from using 'std::' prefix
+
+
+Introducing the GAME OVER 2.0 Program
+	• Same end results, but slightly different code
+		○ Elements are accessed from 'std' differently
+		○ See GAME OVER 2.0 code
+
+
+Employing a 'using' Directive
+	• 'using' gives direct access to elements of the 'std' namespace in the example
+		○ If namespace is area code, 'using' says all elements in 'std' namespace are local numbers now
+			§ Allows usage of 'cout' and 'endl' without prefix
+
+
+Introducing GAME OVER 3.0 Program
+	• See GAME OVER 3.0 code
+
+
+Employing 'using' Declarations
+	• In the example, declares which specific elements from std namespace are being used
+		○ More typing, but more fine tuned
+
+
+Using Arithmetic Operators
+
+
+Adding, Subtracting, and Multiplying
+	• Adding '+'
+	• Subtracting '-'
+	• Multiplying '*'
+	• Each operator is a part of an expression
+		○ Evaluates to a single value
+
+
+Understanding Integer and Floating Point Division
+	• Division '/'
+		○ 7 / 3 = 2
+		○ Why?
+			§ Any calculation involving integers will result in an integer
+			§ Fractional part is thrown out
+		○ If you want fractional answers, must use 'floating point' values
+			§ Number with fractional part
+			§ 7.0 / 3.0 = 2.3333 
+
+
+Using the Modulus Operator
+	• Modulus '%'
+		○ Returns remainder of integer operation
+		○ 7 % 3 = 1
+
+
+Understanding Order of Operations
+	• Evaluated left to right
+	• Some operators have higher precedence
+		○ parentheses
+		○ Multiplication, division, modulus
+		○ Addition and subtraction
+
+
+Declaring and Initializing Variables
+
+
+Introducing the Game Stats Program
+	• Displays specific information
+		○ Number of enemies destroyed
+		○ Current score
+		○ Shields up or down
+	• See Game Stats code
+
+
+Understanding Fundamental Types
+	• All variables have a type
+		○ Represents what kind of information is stored on variable
+	• Fundamental types
+		○ Built into the language
+			§ 'bool' for Boolean
+			§ 'char' for single character 
+			§ 'int' for integers
+			§ 'float' for single-precision floating point numbers
+			§ 'double' for double-precision floating point numbers
+
+
+Understanding Type Modifiers
+	• Use modifiers to alter a type
+		○ 'short' reduces total number of values a variable can hold
+			§ Decrease storage space required for a variable
+			§ Can modify 'int'
+		○ 'long' increases total number of values a variable can hold
+			§ Increase storage space required for a variable
+			§ Can modify 'int' and 'double'
+		○ 'signed' variables can store both positive and negative values
+			§ Default 
+			§ Can modify 'int'
+		○ 'unsigned' variables can only store positive values
+			§ Can modify 'int'
+
+Type	Values
+'short int' 	-32,768 to 32,767
+                 or
+'short'
+'unsigned short'	0 to 65,535
+'int'	-2,147,483,648 to 2,147,483,647
+'unsigned int'	0 to 4,294,967,295
+'long int'	-2,147,483,648 to 2,147,483,647
+                  or
+'long'
+'unsigned long int'	0 to 4,294,967,295
+'float'	3.4E +/- 38 (7 significant digits)
+'double'	1.7E +/- 308 (15 significant digits)
+'long double'	1.7E +/- 308 (15 significant digits)
+'char'	256 character values
+'bool'	'true' or 'false'
+
+
+
+Declaring Variables
+	• Declaring a variable => request that it be created
+		○ Int score;
+	• Can declare multiple variables of same type on same line of code
+		○ Short lives, aliensKilled;
+
+
+Naming Variables
+	• Name is also known as an 'identifier'
+		○ Can contain only numbers, letters, and underscores
+		○ Cannot start with a number
+		○ Cannot be a C++ keyword
+			§ Special word that has its own use
+		○ Be consistent with your identifiers
+			§ highScore or high_score
+
+
+Assigning Values to Variables
+	• 'int'
+		○ Score = 0
+	• 'floating point'
+		○ Distance = 1200.76
+	• 'char'
+		○ playAgain = 'y'
+	• 'bool'
+		○ shieldsUp = true
+
+
+Getting User Input
+	• Use 'cin'
+		○ Similar to 'cout'
+			§ Cin>>fuel;
+		○ Using the 'extraction' operator >>
+	• Gets user input into variables
+
+
+Defining New Names for Types
+	• Use 'typedef' followed by the current type, followed by new name
+		○ Typedef unsigned short int ushort
+		○ Often used to create shorter names for types with long names
+
+
+Performing Arithmetic Operations with Variables
+
+
+Introducing the Game Stats 2.0 Program
+	• See Game Stats 2.0 code
+
+
+Using Combined Assignment Operators
+Operator	Example	Equivalent To
++=	X+=5	X = x + 5
+-=	X-=5	X = x - 5
+*=	X*=5	X = x*5
+/=	x/=5	X = x / 5
+%=	X%=5	X = x % 5
+
+
+Using Increment and Decrement Operators
+	• 'increment' operator '++;
+		○ Increases value of variable by one
+		○ Can use it as a prefix or postfix
+			§ Prefix increments the value THEN performs larger calculations
+			§ Postfix performs larger calculations THEN increments the value
+	• 'decrement' operator '--'
+		○ Works the same way as increment, but subtracts instead of adds
+
+
+Dealing with Integer Wrap Around
+	• What happens when you increase a integer variable beyond maximum?
+		○ Simple; it goes from maximum value to minimum value
+
+
+Working with Constants
+
+
+	• Constant is an unchangeable value that you name
+		○ Useful if you have an unchanging value coming up frequently in your program
+		○ Specific alien ship is worth 150 points
+			§ Could use alienPoints instead of the literal 150
+	• Constants provide two benefits
+		○ Make programs clearer
+			§ Soon as you see alienPoints, you know what it means
+		○ Make changes easy
+			§ Only need to change initialization of constant, and not have to go through all code and edit literal value
+
+
+Introducing the Game Stats 3.0 Program
+	• See Game Stats 3.0 code
+
+
+Using Constants
+	• Use keyword 'const' before variable type
+		○ 'const int ALIEN_POINTS=150;'
+		○ Can now use 'ALIEN_POINTS' like any integer literal
+		○ Notice that the name is in all caps
+			§ All caps is a visual identifier for constant value
+			§ Easier for programmers to proof read
+
+
+Using Enumerations
+	• 'enumeration' is a set of 'unsigned int' constants
+		○ Usually related and have a particular order
+		○ 'enum difficulty {NOVICE, EASY, NORMAL, HARD, UNBEATABLE};'
+			§ Defines enumerations called 'difficulty'
+			§ Default value of enumerators begin at 0 and increase by 1
