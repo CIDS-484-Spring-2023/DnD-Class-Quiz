@@ -1,0 +1,50 @@
+Functions: Mad Lib
+
+Creating Functions
+	• New functions work just like the ones in standard language
+		○ Go off and perform a task, return control back to program
+	• Advantage of writing new functions
+		○ Break code up into manageable pieces
+
+
+Declaring Functions
+	• Function prototype
+		○ Code that describes a function
+	• Parameters
+		○ Receive the values sent as arguments in a function call
+	• 'void' return type
+		○ Does not need to 'return' specific value
+		○ Others may need to return 'string' or 'int', or more
+
+
+Defining Functions
+	• Function header
+		○ Return value of function (or void), name of function, list of parameters between parentheses
+	• Function body
+		○ Everything that lies within the curly brackets {}
+
+
+Understanding Abstraction
+	• Abstraction
+		○ Act of writing and calling functions
+		○ Lets you think about big picture without worrying about details
+		○ Similar to slang, or coworkers using keywords
+
+
+Understanding Encapsulation
+	• Encapsulation
+		○ No variable defined in a function can be used outside of that function
+
+
+	• Scope
+		○ Determines where the variable can be seen in your program
+		○ Allow you to limit accessibility of variables
+		○ Key to encapsulation
+
+
+Inlining Functions
+	• Ask the compiler to make a copy of the function everywhere it's called
+		○ Program control doesn't have to jump to different location each time function is called
+
+
+Mad Lib code
