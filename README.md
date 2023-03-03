@@ -8,3 +8,11 @@ At this point in the project, I have written a vague Pseudocode of my plans for 
 
 -Video link
 https://mediaspace.wisconsin.edu/media/1_2avwanlc
+
+
+# Milestoen 2 Progress
+
+I have put work on the final outcome project on hold, and instead have taken this time to focus on finishing the textbook notes and practice exercises. Chapters 3-6 have now been completed and posted through the Milestone 2 branch.
+
+-Video Link
+

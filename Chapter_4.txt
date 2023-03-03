@@ -1,0 +1,121 @@
+Stadard Template Library: Hangman	
+  
+  • Good game programmers use work that is already done well
+		○ Standard template library - STL
+		○ Powerful collection of good work
+			§ Contains containers, algorithms, iterators, and more
+	• Containers
+		○ Store and access collections of values of the same type
+		○ More flexible and powerful than arrays
+	• Algorithms
+		○ Work with containers
+		○ Common functions used by game programmers repeatedly
+			§ Search, size, copy, merge, insert, and more
+	• Iterators
+		○ Objects that identify elements in containers
+		○ Can be manipulated to move among elements
+		○ Required by STL algorithms
+
+
+Using Vectors
+	• 'vector' class defines one kind of container provided by STL
+		○ General description of 'dynamic array'
+			§ Array that can grow and shrink in size as needed
+		○ Defines member functions to manipulate vector elements
+			§ Vector has all functionality of the array plus more
+	• Advantages of vectors over arrays
+		○ Can grow as needed, arrays cannot
+		○ Can be used with STL algorithms, arrays cannot
+	• Disadvantages of vectors over arrays
+		○ Vectors require extra memory as overhead
+		○ Performance cost when vector grows
+		○ Vectors not available on some game console systems
+
+
+Hero's Inventory 2.0 code
+
+
+Preparing to use Vectors
+	• Include file that contains definition
+		○ '#include <vector>'
+	• All STL components live in the std namespace
+
+
+Declaring a Vector
+	• 'vector<object type><object type 2><more if needed> vectorName;'
+
+
+Hero's Inventory 3.0 code
+
+
+Declaring Iterators
+	• Scope resolution operator '::'
+	• What are iterators
+		○ Values that identify a particular element in container
+		Constant iterators are similar, except you cannot use it to change the element to which it refers
+	• Dereferencing an Iterator
+		○ Use the dereference operator '*'
+			§ Display the element to which the iterator refers to, not the iterator itself
+			§ If iterator were post it note, dereferencing would be accessing the bin the post it note was attached to
+
+
+Using Algorithms
+	• High Scores code
+	• Need the '#include <algorithms> file at start
+
+
+Understanding Vector Performance
+	• Examining vector growth
+		○ Vectors grow dynamically, yet every vector has specific size
+		○ New element is added to full vector, computer reallocates memory
+			§ Might copy all vector elements to newly seized chunk of memory
+			§ Causes performance hit
+		○ Most important thing - know when to care
+			§ Memory allocation might not occur at performance-critical part of program
+			§ Small vectors - reallocation cost might be insignificant
+	• Examining element insertion and deletion
+		○ 'push_back()' and 'pop_back()' respectively
+			§ Extremely efficient for ends of the vector
+		○ 'insert()' and 'erase()' 
+			§ Requires more work
+			§ Adding / removing from anywhere on vector
+			§ Need to move multiple elements to accommodate
+		○ Other sequence container type, like 'list'
+			§ Allows for efficient insertion and deletion regardless of sequence size
+		○ One container type is not the solution to every problem
+
+
+Examining Other STL Containers
+	• Sequential container
+		○ Retrieve values in sequence
+	• Associative container
+		○ Retrieve values based on keys
+	• Container adaptors
+		○ Standard computer science data structures
+		○ Not official containers, but look and feel just like them
+
+
+STL Containers
+	• 'deque'
+		○ Double-ended queue - sequential
+	• 'list'
+		○ Linear list - sequential
+	• 'map'
+		○ Collection of key/value pairs, each key is with exactly one value - associative
+	• 'multimap'
+		○ Collection of key/value pairs, each key can be associated with more than one value - associative
+	• 'multiset'
+		○ Collection in which each element is not necessarily unique - associative
+	• 'priority_queue'
+		○ Priority queue - adaptor
+	• 'queue'
+		○ Queue - adaptor
+	• 'set'
+		○ Collection in which each element is unique - associative
+	• 'stack'
+		○ Stack - adaptor
+	• 'vector'
+		○ Dynamic array - sequential
+
+
+Hangman code

@@ -1,0 +1,53 @@
+References: Tic-Tac-Toe
+
+Using References
+	• Reference
+		○ Provides another name for a variable
+		○ Think of it as a nickname for variable
+	• Referencing code
+		○ To declare and initialize a reference, start with type of value being referenced, followed immediately (NO SPACE) by reference operator '&', then reference name, then '=', then variable that is being referenced
+
+
+Passing References to Alter Arguments
+	• When passing variable to function, function gets copy of variable
+		○ Original value 'argument variable' cannot be changed
+			§ Keeps argument variable safe and unalterable
+		○ Sometimes might want to change argument variable from inside function
+		○ Can be done with references!
+	• Swap code
+
+
+Passing by Value
+	• Parameter will get copy of argument variable, and not access to the argument variable itself
+
+
+Passing by Reference
+	• Parameter is declared as a reference, then function can alter argument variable through reference parameter
+
+
+Passing References for Efficiency
+	• Copying a variable through passing can create overhead
+		○ Negligible if simple 'int' or 'float' value
+		○ Large objects, such as an entire 3D world, could be expensive to copy
+		○ Passing by reference doesn't make copy
+	• Inventory Displayer code
+
+
+Deciding how to Pass Arguments
+	• By value?
+		○ When argument variable is a fundamental built-in type
+			§ 'bool', 'int', or 'float' are examples
+			§ Objects like these are so small, passing by reference doesn't result in gain of efficiency
+		○ When you want computer to make copy of variable
+	• By constant reference?
+		○ When you want to efficiently pass a value that you don't need to change
+	• By reference?
+		○ Only when you want to alter the value of the argument variable
+			§ Should avoid changing argument variables whenever possible
+
+
+Returning References
+	• Inventory Referencer code
+
+
+Tic-Tac-Toe code
