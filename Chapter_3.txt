@@ -1,0 +1,115 @@
+'for' Loops, Strings, and Arrays: Word Jumble
+
+Chapter Goals
+	• Use 'for' loops to iterate over sequences
+	• Use objects, which combine data and functions
+	• Use 'string' objects and their member functions to work with sequences of characters
+	• Use arrays to store, access, and manipulate sequences of any type
+	• Use multidimensional arrays to better represent certain collections of data
+
+
+Using 'for' Loops
+	• Allows you to repeat a section of code, similar to a 'while' loop
+		○ 'for' loops are particularly suited for counting and moving through sequence of things
+					
+					'for (initialization; test; action)'
+						'statement'
+
+
+Introducing the Counter Program
+	• See Counter code
+
+
+Using Empty Statements in 'for' Loops
+	• Can set initialization, test, and actions statements to 'null'
+		○ 'for (;;)'
+	• May seem odd, perfectly legal
+	• Similar to using 'while(true)'
+
+
+Understanding Objects
+	• Most things you want to represent in games are objects
+		○ Such as an alien spacecraft
+		○ Encapsulated, cohesive things that combine qualities and abilities
+			§ Energy levels, and firing weapons
+		○ Makes no sense talking about individual qualities and abilities in isolation from one another
+	• Most modern programming languages allow use of software objects (commonly known as just 'objects')
+		○ Combine data and functions
+	• A data element of an object is 'data member'
+	• Function of an object is 'member function'
+	• Every object of the same type has the same basic structure
+		○ Each object will have same set of data members and member functions
+		○ However, each individual object will have its own values for data members
+	• Objects don't need to know the implementation details to be used
+		○ Don't need to know how to build a car to drive one
+	• Can store objects in variables, just like built-in types
+		○ Can store alien spacecraft of 'Spacecraft' type
+	• Access data members and member functions with member selection operator '.'
+		○ Place operator after variable name of object
+
+
+Using 'string' Objects
+	• A 'string' is an object
+		○ Provides its own set of member functions
+	• Designed to work with a few operators already used
+
+
+Introducing the String Tester Program
+	• See String Tester code
+
+
+Using the 'size()' Member Function
+	• Returns number of characters of indicated object
+		○ All characters count, including spaces
+
+
+Using the 'erase()' Member Function
+	• Removes specified substring from object
+		○ Method one
+			§ Specify beginning position, and length of substring
+		○ Method two
+			§ Specify beginning position
+				□ Deletes everything after that
+		○ Method three
+			§ Supply no arguments
+			§ Deletes entire 'string' object
+
+
+Introducing the 'Hero's Inventory' Program
+	• See Hero's Inventory code
+
+
+Creating Arrays
+	• Good idea to define constant for number of elements in array
+	• Provide a type, followed by name, followed by size surrounded by square brackets
+		○ 'string inventory[10];'
+	• Can initialize array by providing 'initializer list'
+		○ Sequence of elements separated by commas in curly braces after square brackets
+			§ 'string inventory[10] = {"sword", "shield"};'
+
+
+Indexing Arrays
+	• Access any individual element with subscripting operator '[]'
+	• Indexing begins at 0
+
+
+Accessing Member Functions of an Array Element
+	• Array element > member selection operator '.' > function name
+		○ Inventory[0].size()
+
+
+Understanding C-Style Strings
+	• Originally represented with arrays of characters ending in null character
+		○ Now known as c-style strings
+		○ 'char phrase[] = "Game Over!!!"; '
+		○ Null character > '\0'
+			§ Auto stored at end of 'phrase'
+	• Concatenating string objects and c-style strings results in string object
+	• Biggest shortcoming - lengths are fixed
+
+
+Using Multidimensional Arrays
+	• See Tic-Tac-Toe Board code
+
+
+Final Code - Word Jumble
