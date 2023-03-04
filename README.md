@@ -15,4 +15,4 @@ https://mediaspace.wisconsin.edu/media/1_2avwanlc
 I have put work on the final outcome project on hold, and instead have taken this time to focus on finishing the textbook notes and practice exercises. Chapters 3-6 have now been completed and posted through the Milestone 2 branch.
 
 -Video Link
-
+https://mediaspace.wisconsin.edu/media/Milestone%202%20Recording/1_tuqj3xsi
