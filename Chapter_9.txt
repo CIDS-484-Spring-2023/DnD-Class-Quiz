@@ -1,0 +1,176 @@
+Advanced Classes and Dynamic Memory: Game Lobby
+
+	• Dynamic memory
+		○ Memory that is managed yourself
+
+
+Using Aggregation
+	• Aggregation
+		○ Combining of objects so that one is a part of another
+		○ Drag car is made up of wheels, engine, body, etc
+	• Critter Farm program
+
+
+Using Object Data Members
+	• Declare a data member that can hold another object when defining class
+		○ Aggregation
+		○ An object that has another object
+		○ The critter has a name
+			§ Has-a relationship
+
+
+Using Container Data Members
+	• Can use containers as data members for objects
+		○ Vector that holds the name of all animal names on a farm
+
+
+Using Friend Functions and Operator Overloading
+	• Friend functions
+		○ Have complete access to any member of a class
+	• Operator overloading
+		○ Allows user to define new meanings for built-in operators as they relate to objects of your own classes
+	• Friend Critter program
+
+
+Creating Friend Functions
+	• Syntax
+		○ Precede function prototype with keyword 'friend' inside class definition
+		○ 'friend void Peek(const Critter& aCritter)'
+			§ Peek can access any member of Critter, even though it is not a member function
+
+
+Overloading Operators
+	• Gives meaning to built-in operators used with new types that you define
+		○ Example, could overload the '*' operator to not only multiply integer values, but also matrices
+	• Syntax
+		○ Define a function called 'operatorX'
+			§ X is the operator you want to overload
+			§ 'ostream& operator<<…'
+				□ Overloads the '<<' operator
+				□ 'cout' is of the type 'ostream', which already overloads the '<<' operator
+
+
+Dynamically Allocating Memory
+	• C++ has taken the liberty of allocating the necessary memory for a declared variable, as well as freeing the memory once the function that the variable was created in has ended
+		○ This memory is called the STACK
+	• The programmer is in charge of another kind of memory that persists independent of the functions in the program, known as the HEAP (aka free store)
+		○ Programmer is in charge of allocating and freeing this memory
+	• Biggest benefit of heap over stack is EFFICIENCY
+		○ Uses only the amount of memory needed at any given time
+		○ Important tool to writing any significant game
+	• Heap program
+
+
+Using the 'new' Operator
+	• 'new' operator
+		○ Allocates memory on the heap and returns its address
+	• Syntax
+		○ 'new' operator followed by type of value you want to reserve space for
+		○ 'int* pHeap = new int;'
+			§ 'new int' allocates enough memory on heap for one 'int' and returns the address for that chunk of memory
+			§ 'int* pHeap' declares pointer, so it points to the value stored at that address
+			§ Can manipulate the chunk of memory reserved for the integer through usage of 'pHeap'
+	• Memory on the heap persists beyond the function in which it was allocated
+		○ Can create object on heap in one function and return a pointer / reference to it
+		○ 'int* pHeap2 = intOnHeap()'
+			§ 'intOnHeap()' allocates a chunk of memory on heap for an 'int' and assigns 20 to it
+			§ Then it returns a pointer to this chunk of memory, 'pTemp'
+			§ Assigns address of chunk of memory in heap to 'pHeap2'
+
+
+Using the 'delete' Operator
+	• Memory that is allocated on heap must be explicitly freed
+		○ Done by using the 'delete' operator
+			§ Use as partner with the 'new' operator
+		○ 'delete pHeap'
+			§ Memory is returned to the heap for future use
+			§ Data stored in it is no longer available
+				□ Local variable pHeap is not directly affected
+				□ 'pHeap' now points to memory that is returned to heap
+				□ i.e. points to memory that computer can use in some other way at any given time
+				□ 'dangling pointers'
+					® Dealt with by assigning local variables to 0
+					® 'pHeap = 0'
+
+
+Avoiding Memory Leaks
+	• May accidently allocate memory, then lose any way to get at it
+		○ Loses any way to free that memory
+		○ When memory is lost like this, it's a 'memory leak'
+		○ Large leak > program runs out of memory and crashes
+	• Example 1
+		○ Leak1 method
+		○ 'int* drip1 = new int(30)'
+			§ After the method ends, the local variable 'drip1' goes away, and cannot be accessed again. 
+			§ No way to free the allocated memory
+				□ Imagine you lock a room from the outside, and take the only key to that room into the room with you, and close the door behind you
+
+
+Working with Data Members and the Heap
+	• Already have used aggregation to declare data members that store objects
+	• Can also declare data members that are pointers to values on the heap
+		○ Example
+		○ Declare a data member for a large 3D scene
+			§ Might only have access to 3D scene through a pointer
+			§ Problems occur due to way that some default object behaviors work
+	• Heap Data Member program
+
+
+Declaring Data Members that Point to Values on the Heap
+	• First need to declare a data member that's a pointer
+		○ 'string* m_pName'
+	• In the class constructor, can allocate memory to heap, assign value to memory, then point a pointer data member to memory
+		○ 'm_pName = new string(name)'
+
+
+Declaring and Defining Destructors
+	• Common problem is memory leak
+	• Done through a member function, the 'destructor'
+		○ Called just before an object is destroyed
+		○ Used to perform the necessary cleanup
+	• Default destructor
+		○ Created for you by compiler
+		○ Doesn't attempt to free any memory on the heap
+			§ Okay for simple classes
+			§ Not suited for classes with data members that point to values on the heap
+				□ Write your own destructor
+	• Syntax
+		○ Destructor has name preceded by tilde character '~'
+		○ Does not have any parameters or return values
+		○ 'Critter::~Critter()'
+		○ Destructors are automatically called at end of function
+
+
+Declaring and Defining Copy Constructors
+	• Object is copied automatically when…
+		○ Passed by value to a function
+		○ Returned from a function
+		○ Initialized to another object through an initializer
+		○ Provided as a single argument to the object's constructor
+	• Copying is done by special member function 'copy constructor'
+		○ Default copy constructor is supplied
+		○ Simply copies value of each data member to data members of the same name in a new object
+			§ 'member-wise copy'
+		○ Default is okay for simple classes
+			§ Not suited for classes with a data member that points to a value on the heap
+	• Need copy constructor that produces new object with its own chunk of memory on the heap
+		○ 'deep copy'
+	• Syntax
+		○ Copy constructor must have same name as class
+		○ Returns no value, but accepts reference to an object of the class
+			§ Object that will be copied
+		○ Reference should be made constant to protect original object from being changed
+		○ If data member of original object is a pointer to value on heap, copy constructor should request the memory from heap, copy original heap value to new memory, then point appropriate copy object data member to new memory
+
+
+Overloading the Assignment Operator
+	• When both sides of an assignment '=' statement are objects of the same class, the class' assignment operator member function is called
+		○ 'testAssignmentOperator'
+			§ 'crit1 = crit2'
+	• 'this' keyword pointer
+		○ Points to object that was used to call the function
+		○ In program example, 'this' points to 'crit1'
+		○ 'c' constant is 'crit2'
+
+
+Game Lobby Program
