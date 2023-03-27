@@ -19,7 +19,7 @@ https://mediaspace.wisconsin.edu/media/Milestone%202%20Recording/1_tuqj3xsi
 
 # Milestone 3 Progress
 
-I have finished the textbook material, and I am now prepared to continue working on the independent code I started at the beginning. Chapters 7-10 are included in this update.
+I have finished the textbook material, and I am now prepared to continue working on the independent code I started at the beginning. Chapters 7-10 are included in this update. *NOTE* chapter 10 material is located after chapter 1 in the list, not after chapter 9, because GitHub says so
 
 -Video Link
 
