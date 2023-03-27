@@ -1,0 +1,132 @@
+Inheritance and Polymorphism: Blackjack
+
+• Classes give perfect way to represent game entities that have attributes and behaviors
+		○ Game entities often related
+
+
+*************************************************************
+DIFFERENCE IN SYNTAX BETWEEN REFERENCES AND POINTERS
+*************************************************************
+	• References (Chapter 6)
+		○ Provides another name for a variable, think as nickname
+		○ Use the '&' operator
+		○ Does not need to be de-referenced with the '*' operator
+		○ Used when you want to change the value of the 'argument variable'
+		○ ALTERING THE REFERENCE ALSO ALTERS THE ORIGINAL VARIABLE
+	• Pointers (Chapter 7)
+		○ Variable that contains another variables address
+		○ Used to access contents of another variable
+		○ Computer memory > neighborhood
+			○ Memory locations to store data > houses where people live
+			○ Chunks of computer memory sit side by side with different addresses > houses sit side by side with different addresses
+			○ Slip of paper with street address > pointer with memory address
+		○ Often prefix pointers with 'p'
+		○ Use the '*' operator after variable type to declare
+		○ Precede variable with '&' to get address
+		○ Precede variable with '*' to dereference pointer
+
+
+Introducing Inheritance
+	• What is inheritance?
+		○ Allows you to 'derive' a new class from an existing one
+		○ New class will inherit the data members and member functions of 'parent' class
+		○ Imagine you have an 'enemy' class
+			○ Has member function 'attack' and data member 'damage'
+			○ Can create new class 'boss' that gets these variables
+				□ Could then add multiplier and 'special attack' to boss class
+	• Why use inheritance
+		○ Less work
+			○ No need to redefine functionality
+		○ Fewer errors
+			○ Build one bug-free class, can reuse it without error
+		○ Cleaner code
+			○ Programs are easier to understand
+	• Simple Boss program
+
+
+Deriving from a Base Class
+	• Syntax
+		○ 'class Boss : public Enemy'
+			○ In this example, 'boss' is based off of 'enemy'
+			○ 'enemy' is the base class, or superclass
+	• Some base class member functions are NOT INHERITED by derived classes
+		○ Constructors
+		○ Copy constructors
+		○ Destructors
+		○ Overloaded assignment operators
+
+
+Instantiating Objects from a Derived Class
+	• Although constructors and destructors are not inherited, they are still called when an instance is created or destroyed
+		○ Base constructor is called before the derived constructor
+		○ When 'boss' is instantiated, first the 'enemy' constructor assigns 'm_Damage' a value of 10, and then the 'boss' constructor assigns 'm_DamageMultiplier' a value of 3
+			○ This is reversed when the derived object is destroyed
+				□ Derived destructor runs, then base destructor
+
+
+Controlling Access Under Inheritance
+	• When deriving one class from another, you can control amount of access the derived class has to base members
+		○ Provide only as much access as needed
+		○ Use the same access modifiers of 'public' and 'private', and soon 'protected'
+	• Simple Boss 2.0 program
+
+
+Using Access Modifiers with Class Members
+	• Public
+		○ Accessible to all code in a program
+	• Protected
+		○ Accessible only in their own class and certain derived classes
+			○ Depending upon access level used in inheritance
+	• Private
+		○ Only accessible in their own class
+
+
+Calling and Overriding Base Class Member Functions
+	• Not stuck with every base class member function you inherit as is
+		○ Can alter and customize the member functions in the derived class
+	• Introducing the Overriding Boss Program
+
+
+Declaring Virtual Base Class Member Functions
+	• Any inherited base class function that you expect to be overridden should be declared as 'virtual'
+		○ Provides a way for overridden versions of member function to work as expected with pointers and references to objects
+	• Don't use 'virtual' in the definition, only in the declaration
+	• Do not confuse override with overload
+		○ Override provides a new definition of function in derived class
+		○ Overload creates multiple versions of the same function with different signatures
+
+
+Using Overloaded Assignment Operators and Copy Constructors in Derived Classes
+	• Writing overloaded assignment operator functions for a derived class takes a little more effort
+		○ Must call the overloaded assignment operator function of BASE class WITHIN the function of the derived class
+
+
+Introducing Polymorphism
+	• What is it?
+		○ Member function will produce different results depending on the type of object for which it is being called
+		○ Example
+			○ Group of bad guys the player is facing
+			○ Group is made of regular enemies and special enemies, related through inheritance
+			○ Can call the same member function to attack, and results will be different based on which object called the function
+	• Polymorphic Bad Guy program
+
+
+Using Abstract Classes
+	• Might want to define a class to act as a base for other classes
+		○ Doesn't make sense to instantiate objects from this class because it's so generic
+	• Example
+		○ Wide variety of creatures in your world
+		○ Common qualities are that they offer a greeting, and they have a health value
+		○ Could define 'creature' class, and have other classes, like 'orc', 'dragon', and 'pixie' derived from it
+			○ 'creature' is helpful, but don't need to instantiate a 'creature' object
+			○ Can define 'creature' as base class only, through the usage of 'abstract'
+	• Abstract Creature program
+
+
+Declaring Pure Virtual Functions
+	• What is it
+		○ Virtual function that you do not need to give a definition to
+			○ Really depends on the derived class that will call the virtual function
+
+
+Blackjack Game program
