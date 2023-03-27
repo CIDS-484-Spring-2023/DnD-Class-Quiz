@@ -16,3 +16,10 @@ I have put work on the final outcome project on hold, and instead have taken thi
 
 -Video Link
 https://mediaspace.wisconsin.edu/media/Milestone%202%20Recording/1_tuqj3xsi
+
+# Milestone 3 Progress
+
+I have finished the textbook material, and I am now prepared to continue working on the independent code I started at the beginning. Chapters 7-10 are included in this update.
+
+-Video Link
+
