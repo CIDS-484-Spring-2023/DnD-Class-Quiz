@@ -1,0 +1,85 @@
+Pointers: Tic-Tac-Toe 2.0
+
+Understanding Pointer Basics
+	• Pointer
+		○ Variable that can contain a memory address
+		○ Ability to work directly and efficiently with computer memory
+		○ Like iterators, used to access contents of other variables
+	• Computer memory > neighborhood
+		○ Memory locations to store data > houses where people live
+		○ Chunks of computer memory sit side by side with different addresses > houses sit side by side with different addresses
+		○ Slip of paper with street address > pointer with memory address
+	• Pointing Program
+	• Declaring Pointers
+		○ Often prefix pointer variable with 'p'
+		○ Begin with type of object to which the pointer will point, followed by asterisk '*', followed by pointer name
+			§ Asterisk can be attached to either object type, pointer name, or in between
+	• Assigning Addresses to Pointers
+		○ Get address of variable by preceding variable with '&' aka the address operator
+	• Dereferencing Pointers
+		○ Use the dereference operator '*' before the pointer being dereferenced
+			§ '*pScore'
+
+
+Understanding Pointers and Constants
+	• Can restrict the way a pointer works with keyword 'const'
+		○ Restrictions act as safeguards, can make program intentions clearer
+		○ Restricting a pointer > asking only for what you need
+
+
+Using a Constant Pointer
+	• TRAP - YOU MUST INITIALIZE A CONSTANT POINTER, OR IT WILL NOT WORK
+	• Constant pointers
+		○ Point only to the object to which it was initialized, cannot ever be changed later in code
+		○ Syntax - 'int* const pScore = 5000;'
+			§ Constant pointer value - address the pointer stores - cannot change
+
+
+Using a Pointer to a Constant
+	• Different than constant pointers
+		○ This one is a regular pointer that points to a constant variable 
+		○ Syntax - 'const int* pNumber;'
+			§ Pointer to constant cannot change the value to which it points
+
+
+Using a Constant Pointer to a Constant
+	• Combines restrictions of a constant pointer and a pointer to a constant
+		○ Constant pointer to a constant can ONLY point to the object originally initialized
+		○ Constant pointer CANNOT be used to change the value of the object to which it points
+		○ Syntax - 'const int* const pBONUS = &BONUS'
+
+
+Summarizing Constants and Pointers
+	• 'int* const p = &j'
+		○ Declares and initializes a constant pointer
+	• 'const int* p'
+		○ Declares a pointer to a constant
+	• 'const int* const p = &J'
+		○ Declares a constant pointer to a constant
+
+
+Passing Pointers
+	• Swap Pointer Version program
+	• Passing a Constant Pointer
+		○ When you pass a pointer, you pass only the address of the object
+			§ Passing a pointer > emailing a URL of website
+
+
+Returning Pointers
+	• Inventory Pointer program
+	• Must specify in header of function that you're returning a pointer
+		○ 'string* ptrToElement(vector<string>* const pVec, int i)'
+			§ 'string*' says function will return a pointer to a string object
+				□ Not returning a string object itself
+
+
+Understanding the Relationship Between Pointers and Arrays
+	• Array name is really a constant pointer to first element of array
+		○ Can use array name as pointer for random access to elements
+			§ This is because elements of an array are stored in contiguous block of memory
+	• Array Passer program
+		○ Dereferencing array is the same as getting first element in the array
+			§ '*highScores' = 'highScores[0]'
+
+
+Tic-Tac-Toe 2.0 program
