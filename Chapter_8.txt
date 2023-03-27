@@ -1,0 +1,41 @@
+	Classes: Critter Caretaker
+  
+  *NOTE* this chapter is essentially the same course content as the Object Oriented Programming Course offered at UWRF, so the content in this section is a bit smaller
+  
+  • Object oriented programming
+		○ Define different types of objects with relationships to each other that allow the objects to interact
+		○ Can create your own objects and variable types!
+		○ This chapter is essentially what I learned in the class Object-Oriented Programming, but tailored for C++ rather than Java
+
+
+Defining New Types
+	• Simple Critter program
+
+
+Using Constructors
+	• Constructor Critter program
+
+
+Setting Member Access Levels
+	• Private Critter program
+
+
+Defining Constant Member Functions
+	• Constant member function
+		○ Cannot modify a data member of its class
+		○ Cannot call a non-constant member function of its class
+			§ Asking only for what you need
+			§ If you don't need to change any data members in a member function, declare as constant
+		○ 'int GetHunger() const;'
+			§ Only returns a class member, does not alter it in any way
+
+
+Using Static Data Members and Member Functions
+	• Static Critter program
+	• Static variables are used generally for populations
+		○ Static data member
+			§ Single data member that exists for the entire class
+		○ Keep adding / subtracting from it, shows total
+
+
+Critter Caretaker Game
