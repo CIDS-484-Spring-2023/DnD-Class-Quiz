@@ -23,3 +23,7 @@ I have finished the textbook material, and I am now prepared to continue working
 
 -Video Link
 
+# Milestone 4 Progress
+
+Final project is fully outlined, and I have uploaded the questionnaire that will be implemented into the program. There are a few tweaks that need to be made to the questionnaire so that the answer pool is more balanced, but after that, it's just a copy and past away from being complete!
+
