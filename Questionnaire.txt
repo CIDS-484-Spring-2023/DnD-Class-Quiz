@@ -1,0 +1,173 @@
+1.  How do you typically approach social situations?
+
+a) Confidently and assertively (Paladin +2, Barbarian +1)
+b) Politely and respectfully (Cleric +1, Druid +2)
+c) With humor and charm (Bard +2, Rogue +1)
+d) Carefully and cautiously (Wizard +2, Ranger +1)
+
+2.  How do you handle conflicts with others?
+
+a) I confront the issue head-on and try to resolve it (Paladin +2, Fighter +1)
+b) I try to find a compromise that works for both parties (Cleric +1, Ranger +2)
+c) I use humor and charm to defuse the situation (Bard +2, Rogue +1)
+d) I avoid the conflict if possible or seek guidance from others (Wizard +2, Druid +1)
+
+3.  What is your approach to teamwork?
+
+a) I take charge and delegate tasks (Paladin +2, Fighter +1)
+b) I work collaboratively and communicate effectively (Cleric +1, Ranger +2)
+c) I try to keep the team motivated and focused (Bard +2, Barbarian +1)
+d) I prefer to work independently and contribute on my own (Wizard +2, Rogue +1)
+
+4.  How do you make friends?
+
+a) By showing my loyalty and trustworthiness (Paladin +2, Cleric +1)
+b) By entertaining and making others laugh (Bard +2, Rogue +1)
+c) By being kind and empathetic (Druid +2, Ranger +1)
+d) By sharing my knowledge and skills (Wizard +2, Warlock +1)
+
+5.  How do you handle rejection or exclusion from a social group?
+
+a) I try to figure out what went wrong and work to improve myself (Paladin +2, Cleric +1)
+b) I move on and find a new group that values me (Ranger +2, Barbarian +1)
+c) I use humor and charm to defuse the situation (Bard +2, Rogue +1)
+d) I retreat and seek solace in solitude or seek guidance from a trusted mentor (Wizard +2, Warlock +1)
+
+6.  How do you react when you are feeling angry?
+
+a) I confront the source of my anger and try to resolve the issue (Barbarian +2, Fighter +1)
+b) I try to find a peaceful solution to the problem (Druid +2, Cleric +1)
+c) I use humor to defuse the situation (Bard +2, Rogue +1)
+d) I retreat and calm down before taking any action (Wizard +2, Paladin +1)
+
+7.  How do you react when you are feeling sad?
+
+a) I seek comfort from loved ones or friends (Cleric +2, Ranger +1)
+b) I distract myself with activities or hobbies (Bard +2, Rogue +1)
+c) I spend time alone to process my emotions (Wizard +2, Warlock +1)
+d) I try to stay positive and focus on the good things in my life (Paladin +2, Sorcerer +1)
+
+8.  How do you react when you are feeling scared?
+
+a) I confront my fears and try to overcome them (Paladin +2, Ranger +1)
+b) I seek support and guidance from trusted friends or mentors (Cleric +2, Druid +1)
+c) I try to distract myself from my fears (Bard +2, Rogue +1)
+d) I retreat and avoid situations that trigger my fears (Wizard +2, Warlock +1)
+
+9.  How do you react when you are feeling happy?
+
+a) I share my happiness with others and try to spread positivity (Bard +2, Paladin +1)
+b) I celebrate and enjoy the moment (Sorcerer +2, Barbarian +1)
+c) I express gratitude and appreciate the people in my life (Cleric +2, Druid +1)
+d) I try to maintain my happiness by focusing on the things that make me happy (Rogue +2, Wizard +1)
+
+10. How do you react when you are feeling stressed or overwhelmed?
+
+a) I try to identify the source of my stress and work to address it (Paladin +2, Ranger +1)
+b) I seek support and guidance from trusted friends or mentors (Cleric +2, Druid +1)
+c) I try to distract myself with activities or hobbies (Bard +2, Rogue +1)
+d) I retreat and take time for self-care and relaxation (Wizard +2, Warlock +1)
+
+11. How do you approach studying for a difficult exam?
+
+a) I create a detailed study plan and follow it diligently (Wizard +2, Cleric +1)
+b) I work with a study group to share knowledge and insights (Bard +2, Ranger +1)
+c) I focus on practicing problems and applying concepts (Sorcerer +2, Druid +1)
+d) I try to find creative ways to memorize and retain information (Rogue +2, Paladin +1)
+
+12. How do you prefer to learn new concepts?
+
+a) By reading and researching (Wizard +2, Cleric +1)
+b) By practicing and applying (Sorcerer +2, Druid +1)
+c) By discussing with others (Bard +2, Rogue +1)
+d) By experimenting and exploring (Warlock +2, Barbarian +1)
+
+13. How do you handle a difficult or challenging assignment?
+
+a) I break it down into smaller, manageable tasks (Wizard +2, Cleric +1)
+b) I seek help and guidance from teachers or tutors (Bard +2, Ranger +1)
+c) I approach it creatively and think outside the box (Sorcerer +2, Warlock +1)
+d) I work tirelessly until I figure it out (Barbarian +2, Rogue +1)
+
+14. How do you approach group projects or collaborations?
+
+a) I take a leadership role and delegate tasks (Paladin +2, Ranger +1)
+b) I listen to everyone's ideas and try to find common ground (Cleric +2, Bard +1)
+c) I focus on my own tasks and let others do the same (Wizard +2, Rogue +1)
+d) I enjoy working with others and find it a collaborative effort (Druid +2, Sorcerer +1)
+
+15. How do you react to receiving constructive criticism on your work?
+
+a) I take it as an opportunity to improve and learn (Cleric +2, Paladin +1)
+b) I appreciate the feedback but also defend my ideas (Rogue +2, Warlock +1)
+c) I take it personally and feel discouraged (Wizard +2, Sorcerer +1)
+d) I ignore it and continue with my work (Barbarian +2, Ranger +1)
+
+16. How do you handle a conflict with a coworker or boss?
+
+a) I try to find a compromise and resolve the issue peacefully (Cleric +2, Paladin +1)
+b) I stand my ground and defend my position (Fighter +2, Rogue +1)
+c) I try to avoid the conflict and maintain a peaceful work environment (Druid +2, Bard +1)
+d) I take charge and confront the issue head-on (Barbarian +2, Warlock +1)
+
+17. How do you approach a new project or task at work?
+
+a) I research and gather information before starting (Wizard +2, Cleric +1)
+b) I jump right in and figure it out as I go (Rogue +2, Barbarian +1)
+c) I collaborate with others to come up with a plan (Bard +2, Ranger +1)
+d) I analyze the situation and come up with a strategy (Paladin +2, Warlock +1)
+
+18. How do you react to feedback or criticism from your boss or coworkers?
+
+a) I take it seriously and try to improve my performance (Cleric +2, Paladin +1)
+b) I appreciate the feedback but also defend my work (Rogue +2, Warlock +1)
+c) I become defensive and don't take the feedback well (Wizard +2, Sorcerer +1)
+d) I ignore the feedback and continue working as usual (Barbarian +2, Ranger +1)
+
+19. How do you handle stress and pressure at work?
+
+a) I take breaks and practice self-care to manage stress (Druid +2, Cleric +1)
+b) I work harder and longer to get the job done (Fighter +2, Barbarian +1)
+c) I delegate tasks to others and focus on what's important (Paladin +2, Ranger +1)
+d) I find creative ways to manage stress and stay productive (Bard +2, Warlock +1)
+
+20. How do you approach a new job or work opportunity?
+
+a) I research the company and position thoroughly before applying (Wizard +2, Cleric +1)
+b) I apply for as many jobs as possible and hope for the best (Rogue +2, Barbarian +1)
+c) I network with people and ask for recommendations (Bard +2, Ranger +1)
+d) I go for the job that excites me the most, regardless of other factors (Sorcerer +2, Warlock +1)
+
+-----------------
+TOTAL POINT TALLY
+-----------------
+
+Barbarian - 18
+-----------------
+Bard - 34
+-----------------
+Cleric - 28
+-----------------
+Druid - 18
+-----------------
+Fighter - 7
+-----------------
+Monk - 0
+-----------------
+Paladin - 28
+-----------------
+Ranger - 19
+-----------------
+Rogue - 25
+-----------------
+Sorcerer - 14
+-----------------
+Warlock - 14
+-----------------
+Wizard - 35
+-----------------
+
+
+*clearly, the generator I used has biases towards the more "stereotypical" Dungeons and Dragons classes, while also downright excluding one of them. So I will need
+ to alter some of the point values and their respective class to more balance the questionnaire, but afterwards, all that is left is a copy and past from this file
+ to the code itself!
