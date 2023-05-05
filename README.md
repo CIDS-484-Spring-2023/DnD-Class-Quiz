@@ -32,4 +32,4 @@ Final project is fully outlined, and I have uploaded the questionnaire that will
 I have finished, adjusted, and uploaded my personal project for this C++ tutorial. Using 'switch' and 'case' for the questionnaire proved to be tedious, and given time, I'm sure I could have come up with a more sucinct approach, but it works! Adjusted the answer pool for the questionnaire, and I also re-wrote all the questions because I noticed quite a few were very similar. I hope that this repository is useful to any who are looking to learn C++ as a coding language!
 
 -Video Link
-
+https://mediaspace.wisconsin.edu/media/Final+Update+on+Senior+Capstone/1_8esh9pr0
