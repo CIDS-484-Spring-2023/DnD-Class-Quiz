@@ -736,7 +736,7 @@ void conclusion(classInfo info[])
 		{
 			highestPoints = info[i].points;
 			highestClass = info[i].title;
-			classCounter++;
+			classCounter = i;
 			tie = false;
 		}
 		else if (info[i].points == highestPoints)
